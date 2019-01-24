@@ -1,0 +1,124 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_TimeLimit                               9999
+Tried aggregator 1 time.
+MIP Presolve eliminated 19 rows and 19 columns.
+Reduced MIP has 441 rows, 781 columns, and 2304 nonzeros.
+Reduced MIP has 400 binaries, 381 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,39 ticks)
+Found incumbent of value 164,386367 after 0,01 sec. (6,21 ticks)
+Probing fixed 19 vars, tightened 0 bounds.
+Probing time = 0,01 sec. (3,10 ticks)
+Cover probing fixed 0 vars, tightened 361 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 21 rows and 39 columns.
+MIP Presolve modified 362 coefficients.
+Reduced MIP has 420 rows, 742 columns, and 2206 nonzeros.
+Reduced MIP has 381 binaries, 361 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,39 ticks)
+Probing time = 0,00 sec. (2,68 ticks)
+Clique table members: 40.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (3,55 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          164,3864        0,0000           100,00%
+      0     0       46,3928    38      164,3864       46,3928      239   71,78%
+      0     0       52,3849    68      164,3864      Cuts: 50      521   68,13%
+*     0+    0                           61,7621       52,3849            15,18%
+      0     0       53,8832    80       61,7621      Cuts: 57      810   12,76%
+      0     0       55,1626    82       61,7621      Cuts: 11      999   10,69%
+      0     0       55,6791    86       61,7621      Cuts: 33     1131    9,85%
+*     0+    0                           56,3672       55,6791             1,22%
+*     0+    0                           55,8316       55,6791             0,27%
+
+Repeating presolve.
+Tried aggregator 2 times.
+MIP Presolve eliminated 295 rows and 606 columns.
+MIP Presolve modified 5 coefficients.
+Aggregator did 29 substitutions.
+Reduced MIP has 96 rows, 107 columns, and 382 nonzeros.
+Reduced MIP has 41 binaries, 66 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,75 ticks)
+Probing fixed 0 vars, tightened 4 bounds.
+Probing time = 0,00 sec. (0,06 ticks)
+Cover probing fixed 0 vars, tightened 1 bounds.
+Tried aggregator 1 time.
+MIP Presolve modified 7 coefficients.
+Reduced MIP has 96 rows, 107 columns, and 382 nonzeros.
+Reduced MIP has 41 binaries, 66 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,23 ticks)
+Represolve time = 0,00 sec. (2,37 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+Clique table members: 20.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,10 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           55,8316       55,6791             0,27%
+      0     0       55,6869    40       55,8316       55,6869     1249    0,26%
+      0     0        cutoff             55,8316       55,8316     1272    0,00%
+Elapsed time = 0,33 sec. (185,35 ticks, tree = 0,01 MB, solutions = 4)
+
+Cover cuts applied:  7
+Implied bound cuts applied:  10
+Flow cuts applied:  19
+Mixed integer rounding cuts applied:  3
+Zero-half cuts applied:  3
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0,33 sec. (185,38 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,33 sec. (185,38 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 55.83162
+12/18/2018 23:39:06 550
+solving time ~= 334.990966797
+Done
+ [[0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 20 0 0 0 0 0 0 0 0 0 0]
+         [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 0 0]
+         [6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 19 0 0 0 0 0]
+         [0 0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 11 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 0 0]]
+
+<<< post process
+
+
+<<< done
+

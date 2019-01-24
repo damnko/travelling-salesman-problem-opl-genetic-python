@@ -1,0 +1,120 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_TimeLimit                               2
+Tried aggregator 1 time.
+MIP Presolve eliminated 19 rows and 19 columns.
+Reduced MIP has 441 rows, 781 columns, and 2304 nonzeros.
+Reduced MIP has 400 binaries, 381 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,39 ticks)
+Probing fixed 19 vars, tightened 0 bounds.
+Probing time = 0,01 sec. (3,10 ticks)
+Cover probing fixed 0 vars, tightened 361 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 21 rows and 39 columns.
+MIP Presolve modified 362 coefficients.
+Reduced MIP has 420 rows, 742 columns, and 2206 nonzeros.
+Reduced MIP has 381 binaries, 361 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,40 ticks)
+Probing time = 0,01 sec. (2,68 ticks)
+Clique table members: 40.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (3,85 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           76,8384        0,0000           100,00%
+      0     0       29,8212    55       76,8384       29,8212      251   61,19%
+      0     0       32,6210    72       76,8384      Cuts: 64      318   57,55%
+*     0+    0                           44,2926       32,6210            26,35%
+      0     0       34,8750    83       44,2926      Cuts: 46      397   21,26%
+      0     0       41,8423    67       44,2926      Cuts: 37      614    5,53%
+      0     0       43,9415    74       44,2926      Cuts: 50      823    0,79%
+*     0+    0                           44,2820       43,9415             0,77%
+
+Repeating presolve.
+Tried aggregator 2 times.
+MIP Presolve eliminated 259 rows and 528 columns.
+MIP Presolve modified 18 coefficients.
+Aggregator did 31 substitutions.
+Reduced MIP has 130 rows, 183 columns, and 676 nonzeros.
+Reduced MIP has 81 binaries, 102 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,93 ticks)
+Probing time = 0,00 sec. (0,21 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 130 rows, 183 columns, and 676 nonzeros.
+Reduced MIP has 81 binaries, 102 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,45 ticks)
+Represolve time = 0,01 sec. (3,60 ticks)
+Probing time = 0,00 sec. (0,21 ticks)
+Clique table members: 38.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,80 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           44,2820       43,9415             0,77%
+      0     0       43,9415    64       44,2820       43,9415      985    0,77%
+      0     0        cutoff             44,2820       44,2820     1032    0,00%
+Elapsed time = 0,36 sec. (218,76 ticks, tree = 0,01 MB, solutions = 3)
+
+Cover cuts applied:  10
+Implied bound cuts applied:  25
+Flow cuts applied:  29
+Mixed integer rounding cuts applied:  9
+Zero-half cuts applied:  10
+Multi commodity flow cuts applied:  1
+Lift and project cuts applied:  16
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0,36 sec. (218,80 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,36 sec. (218,80 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 44.28201
+12/18/2018 23:52:24 224
+solving time ~= 369.916015625
+Done
+ [[0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0]
+         [0 0 9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0]
+         [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 20 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19 0 0]
+         [0 0 0 11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0]]
+
+<<< post process
+
+
+<<< done
+

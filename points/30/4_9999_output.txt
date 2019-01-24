@@ -1,0 +1,120 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_TimeLimit                               9999
+Tried aggregator 1 time.
+MIP Presolve eliminated 29 rows and 29 columns.
+Reduced MIP has 961 rows, 1771 columns, and 5254 nonzeros.
+Reduced MIP has 900 binaries, 871 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,90 ticks)
+Probing fixed 29 vars, tightened 0 bounds.
+Probing time = 0,02 sec. (10,57 ticks)
+Cover probing fixed 0 vars, tightened 841 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 31 rows and 59 columns.
+MIP Presolve modified 842 coefficients.
+Reduced MIP has 930 rows, 1712 columns, and 5106 nonzeros.
+Reduced MIP has 871 binaries, 841 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (5,06 ticks)
+Probing time = 0,01 sec. (3,17 ticks)
+Clique table members: 60.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,01 sec. (19,54 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          172,0180        0,0000           100,00%
+      0     0       44,5054    73      172,0180       44,5054      630   74,13%
+*     0+    0                          108,6653       44,5054            59,04%
+      0     0       46,1696   102      108,6653      Cuts: 55     1042   57,51%
+      0     0       46,6165   115      108,6653      Cuts: 30     1224   57,10%
+      0     0       46,7605   122      108,6653      Cuts: 27     1284   56,97%
+      0     0       46,7967   135      108,6653      Cuts: 10     1304   56,94%
+      0     0       46,8149   136      108,6653       Cuts: 4     1308   56,92%
+      0     0       46,8152   134      108,6653   Flowcuts: 1     1310   56,92%
+*     0+    0                           62,6618       46,8152            25,29%
+*     0+    0                           58,7343       46,8461            20,24%
+      0     2       46,8152   123       58,7343       49,7252     1310   15,34%
+Elapsed time = 0,78 sec. (380,31 ticks, tree = 0,01 MB, solutions = 4)
+*    24+    3                           58,3296       49,7252            14,75%
+    298   230       48,7631    93       58,3296       49,7252    21633   14,75%
+    691   482       48,7331    84       58,3296       49,7252    41522   14,75%
+*   851   619      integral     0       57,0403       49,7252    54668   12,82%
+*   915+  617                           56,6214       49,7252            12,18%
+    996   672       55,1839   107       56,6214       49,7252    64843   12,18%
+   1373   964       55,6111    90       56,6214       49,7252    93221   12,18%
+   1849  1336       53,9302   100       56,6214       49,7252   118770   12,18%
+*  1920  1361      integral     0       56,0787       49,7252   120381   11,33%
+   2342  1491       54,7348   101       56,0787       49,8512   136939   11,10%
+*  2394+ 1098                           55,6711       51,2286             7,98%
+*  2394+  732                           55,5985       53,9040             3,05%
+*  2394+  488                           54,0709       53,9446             0,23%
+   2394   488       54,0699     8       54,0709       53,9446   150000    0,23%
+
+GUB cover cuts applied:  3
+Cover cuts applied:  7
+Implied bound cuts applied:  15
+Flow cuts applied:  82
+Mixed integer rounding cuts applied:  15
+Zero-half cuts applied:  6
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0,77 sec. (379,77 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    6,68 sec. (2607,38 ticks)
+  Sync time (average)   =    0,65 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    7,45 sec. (2987,16 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 54.07091
+12/18/2018 23:58:06 445
+solving time ~= 7467.740966797
+Done
+ [[0 0 0 0 0 0 0 0 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0]]
+
+<<< post process
+
+
+<<< done
+

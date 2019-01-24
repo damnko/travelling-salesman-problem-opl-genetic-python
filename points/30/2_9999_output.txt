@@ -1,0 +1,112 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_TimeLimit                               9999
+Tried aggregator 1 time.
+MIP Presolve eliminated 29 rows and 29 columns.
+Reduced MIP has 961 rows, 1771 columns, and 5254 nonzeros.
+Reduced MIP has 900 binaries, 871 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,90 ticks)
+Found incumbent of value 230,825208 after 0,02 sec. (10,97 ticks)
+Probing fixed 29 vars, tightened 0 bounds.
+Probing time = 0,02 sec. (10,57 ticks)
+Cover probing fixed 0 vars, tightened 841 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 31 rows and 59 columns.
+MIP Presolve modified 842 coefficients.
+Reduced MIP has 930 rows, 1712 columns, and 5106 nonzeros.
+Reduced MIP has 871 binaries, 841 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (5,06 ticks)
+Probing time = 0,01 sec. (3,17 ticks)
+Clique table members: 60.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,02 sec. (19,47 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          230,8252        0,0000           100,00%
+      0     0       56,8408    55      230,8252       56,8408      582   75,37%
+*     0+    0                          110,2842       56,8408            48,46%
+      0     0       59,1657    73      110,2842      Cuts: 84      824   46,35%
+*     0+    0                           76,5220       59,1657            22,68%
+      0     0       62,9642   130       76,5220      Cuts: 43     1127   17,72%
+      0     0       63,3711   114       76,5220      Cuts: 23     1489   17,19%
+      0     0       63,3713   124       76,5220      Cuts: 12     1538   17,19%
+      0     0       63,3725   114       76,5220   Flowcuts: 2     1577   17,18%
+      0     0       63,3725   115       76,5220       Cuts: 7     1582   17,18%
+*     0+    0                           70,3732       63,3725             9,95%
+*     0+    0                           70,1711       63,3725             9,69%
+      0     2       63,3725   115       70,1711       63,3725     1582    9,69%
+Elapsed time = 0,90 sec. (434,58 ticks, tree = 0,01 MB, solutions = 5)
+*    65    49      integral     0       69,1353       63,3751     6244    8,33%
+*   245   164      integral     0       67,5595       63,3832    14156    6,18%
+*   501+  223                           67,3535       63,9047             5,12%
+*   624   373      integral     0       66,9903       64,2639    28951    4,07%
+    935   270        cutoff             66,9903       65,4862    40352    2,25%
+
+Cover cuts applied:  13
+Implied bound cuts applied:  45
+Flow cuts applied:  36
+Mixed integer rounding cuts applied:  1
+Zero-half cuts applied:  2
+Lift and project cuts applied:  3
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0,89 sec. (434,09 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,95 sec. (501,82 ticks)
+  Sync time (average)   =    0,16 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    1,85 sec. (935,92 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 66.99027
+12/18/2018 23:57:55 721
+solving time ~= 1857.522949219
+Done
+ [[0 0 0 0 0 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0]]
+
+<<< post process
+
+
+<<< done
+
