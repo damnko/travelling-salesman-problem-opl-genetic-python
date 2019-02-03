@@ -1,7 +1,7 @@
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-plt.rcParams['figure.figsize'] = [20, 15]
+plt.rcParams['figure.figsize'] = [5, 7]
 import os
 from subprocess import call, check_call, check_output
 from scipy.spatial import distance_matrix
@@ -63,8 +63,7 @@ class Drawer:
         m = np.array([x, y])
         return m, n
 
-#pointsToGenerate = [10,20,30,40,50,60,70,80,90,100]
-pointsToGenerate = [80,90,100]
+pointsToGenerate = [10,20,30,40,50,60,70,80]
 samplesNr = 10
 for points in pointsToGenerate:
     finished = False
@@ -138,21 +137,21 @@ for points in pointsToGenerate:
             print('passo')
             continue
 
-        if not os.path.exists('./{}'.format(correctPoints)):
-            os.mkdir('./{}'.format(correctPoints))
+        if not os.path.exists('./points/{}'.format(correctPoints)):
+            os.mkdir('./points/{}'.format(correctPoints))
 
         # compute distance matrix
         dist = distance_matrix(uniquenr, uniquenr)
 
         # save OPL data file
-        if not os.path.exists('./{}'.format(correctPoints)):
-            os.mkdir('./{}'.format(correctPoints))
-        with open('./{}/{}.dat'.format(correctPoints,it), 'w') as datFile:
+        if not os.path.exists('./points/{}'.format(correctPoints)):
+            os.mkdir('./points/{}'.format(correctPoints))
+        with open('./points/{}/{}.dat'.format(correctPoints,it), 'w') as datFile:
             datFile.write('totalHoles = {};\n'.format(len(xTot)))
             datFile.write('zeroHoleID = {};\n'.format(np.random.randint(0, len(xTot))+1))
             datFile.write('C = {};'.format(json.dumps(dist.tolist())))
             # store numpy format files
-            np.savez('./{}/{}'.format(correctPoints,it), dist=dist, xTot=xTot, yTot=yTot)
+            np.savez('./points/{}/{}'.format(correctPoints,it), dist=dist, xTot=xTot, yTot=yTot)
 
             if it == samplesNr:
                 finished = True

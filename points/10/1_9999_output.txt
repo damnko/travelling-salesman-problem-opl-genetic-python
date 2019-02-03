@@ -1,8 +1,9 @@
+Default LOCALE: LC_CTYPE=en_US.UTF-8;LC_NUMERIC=it_IT.UTF-8;LC_TIME=en_US.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=it_IT.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=it_IT.UTF-8;LC_NAME=it_IT.UTF-8;LC_ADDRESS=it_IT.UTF-8;LC_TELEPHONE=it_IT.UTF-8;LC_MEASUREMENT=it_IT.UTF-8;LC_IDENTIFICATION=it_IT.UTF-8
 
-<<< setup
+<<< setup, at 0s, took 1,54878e+09s
 
 
-<<< generate
+<<< generate, at 0s, took 0,00412202s
 
 CPXPARAM_TimeLimit                               9999
 Tried aggregator 2 times.
@@ -11,7 +12,7 @@ Aggregator did 10 substitutions.
 Reduced MIP has 111 rows, 181 columns, and 614 nonzeros.
 Reduced MIP has 90 binaries, 91 generals, 0 SOSs, and 0 indicators.
 Presolve time = 0,00 sec. (0,61 ticks)
-Found incumbent of value 79,078145 after 0,00 sec. (1,23 ticks)
+Found incumbent of value 64,319155 after 0,00 sec. (1,23 ticks)
 Probing fixed 7 vars, tightened 0 bounds.
 Probing time = 0,00 sec. (0,36 ticks)
 Cover probing fixed 0 vars, tightened 63 bounds.
@@ -26,78 +27,97 @@ Clique table members: 19.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 0,00 sec. (0,45 ticks)
+Root relaxation solution time = 0,00 sec. (0,82 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           79,0781        0,0000           100,00%
-      0     0       25,2735    19       79,0781       25,2735       75   68,04%
-      0     0       25,9760    39       79,0781      Cuts: 40      106   67,15%
-      0     0       28,1106    47       79,0781      Cuts: 40      143   64,45%
-      0     0       28,5624    56       79,0781      Cuts: 26      176   63,88%
-      0     0       28,8452    48       79,0781      Cuts: 17      206   63,52%
-      0     0       28,9454    55       79,0781      Cuts: 24      236   63,40%
-      0     0       28,9964    57       79,0781      Cuts: 16      252   63,33%
-      0     0       29,0802    59       79,0781      Cuts: 17      269   63,23%
-      0     0       29,1437    56       79,0781      Cuts: 13      286   63,15%
-      0     0       29,2426    55       79,0781      Cuts: 10      306   63,02%
-      0     0       29,4772    55       79,0781      Cuts: 16      339   62,72%
-      0     0       30,0730    49       79,0781       Cuts: 8      359   61,97%
-      0     0       30,2677    52       79,0781      Cuts: 18      384   61,72%
-      0     0       30,4298    56       79,0781      Cuts: 34      412   61,52%
-      0     0       30,7933    55       79,0781      Cuts: 22      458   61,06%
-      0     0       31,3372    48       79,0781      Cuts: 27      530   60,37%
-      0     0       31,3814    57       79,0781      Cuts: 22      552   60,32%
-      0     0       31,4358    54       79,0781       Cuts: 9      568   60,25%
-      0     0       31,4677    53       79,0781      Cuts: 14      591   60,21%
-      0     0       31,4972    52       79,0781      Cuts: 17      607   60,17%
-      0     0       31,5247    58       79,0781      Cuts: 18      620   60,13%
-      0     0       31,5430    60       79,0781      Cuts: 11      630   60,11%
-      0     0       31,5518    60       79,0781       Cuts: 3      638   60,10%
-      0     0       31,5533    63       79,0781       Cuts: 5      641   60,10%
-      0     0       31,5547    60       79,0781   ZeroHalf: 1      643   60,10%
-*     0+    0                           39,3776       31,5547            19,87%
-*     0+    0                           37,1618       31,5547            15,09%
-      0     0        cutoff             37,1618       37,1618      643    0,00%
-Elapsed time = 0,13 sec. (72,96 ticks, tree = 0,01 MB, solutions = 3)
+*     0+    0                           64,3192        0,0000           100,00%
+      0     0       22,3271    26       64,3192       22,3271      124   65,29%
+      0     0       23,6283    30       64,3192      Cuts: 52      150   63,26%
+      0     0       25,2117    46       64,3192      Cuts: 36      207   60,80%
+      0     0       25,6773    47       64,3192      Cuts: 20      240   60,08%
+      0     0       26,4488    36       64,3192      Cuts: 19      271   58,88%
+      0     0       26,8464    40       64,3192      Cuts: 26      307   58,26%
+      0     0       30,2223    38       64,3192      Cuts: 24      375   53,01%
+      0     0       30,3611    50       64,3192      Cuts: 15      413   52,80%
+      0     0       30,3679    48       64,3192      Cuts: 18      426   52,79%
+      0     0       30,3814    45       64,3192      Cuts: 16      439   52,76%
+      0     0       30,3993    49       64,3192      Cuts: 14      458   52,74%
+      0     0       30,4004    49       64,3192       Cuts: 6      463   52,74%
+      0     0       30,4092    49       64,3192   ZeroHalf: 2      467   52,72%
+      0     0       30,4149    55       64,3192      Cuts: 10      481   52,71%
+      0     0       30,4413    53       64,3192       Cuts: 9      493   52,67%
+      0     0       30,4428    54       64,3192       Cuts: 2      495   52,67%
+*     0+    0                           31,0897       30,4428             2,08%
 
+Cover cuts applied:  7
 Implied bound cuts applied:  9
-Flow cuts applied:  26
-Mixed integer rounding cuts applied:  8
-Zero-half cuts applied:  15
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  1
+Flow cuts applied:  18
+Mixed integer rounding cuts applied:  4
+Zero-half cuts applied:  9
+Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-  Real time             =    0,13 sec. (72,98 ticks)
+  Real time             =    0,12 sec. (77,33 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0,00 sec. (0,00 ticks)
   Sync time (average)   =    0,00 sec.
   Wait time (average)   =    0,00 sec.
                           ------------
-Total (root+branch&cut) =    0,13 sec. (72,98 ticks)
+Total (root+branch&cut) =    0,12 sec. (77,33 ticks)
 
-<<< solve
+<<< solve, at 0,2s, took 0,119197s
 
 
-OBJECTIVE: 37.16184
-12/18/2018 23:39:04 491
-solving time ~= 128.8671875
+OBJECTIVE: 31.08971
+01/29/2019 18:42:30 862
+solving time ~= 120.936767578
 Done
- [[0 0 0 0 0 0 0 7 0 0]
-         [8 0 0 0 0 0 0 0 0 0]
-         [0 9 0 0 0 0 0 0 0 0]
-         [0 0 10 0 0 0 0 0 0 0]
-         [0 0 0 1 0 0 0 0 0 0]
+ [[0 4 0 0 0 0 0 0 0 0]
+         [0 0 0 3 0 0 0 0 0 0]
+         [5 0 0 0 0 0 0 0 0 0]
          [0 0 0 0 2 0 0 0 0 0]
-         [0 0 0 0 0 3 0 0 0 0]
-         [0 0 0 0 0 0 0 0 0 6]
-         [0 0 0 0 0 0 4 0 0 0]
-         [0 0 0 0 0 0 0 0 5 0]]
+         [0 0 0 0 0 1 0 0 0 0]
+         [0 0 0 0 0 0 0 10 0 0]
+         [0 0 6 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 0 9]
+         [0 0 0 0 0 0 7 0 0 0]
+         [0 0 0 0 0 0 0 0 8 0]]
 
-<<< post process
+<<< post process, at 0,2s, took 0,000607967s
 
+// solution (integer optimal, tolerance) with objective 31.0897104524464
+// Quality Incumbent solution:
+// MILP objective                                 3,1089710452e+01
+// MILP solution norm |x| (Total, Max)            6,50000e+01  1,00000e+01
+// MILP solution error (Ax=b) (Total, Max)        0,00000e+00  0,00000e+00
+// MILP x bound error (Total, Max)                0,00000e+00  0,00000e+00
+// MILP x integrality error (Total, Max)          0,00000e+00  0,00000e+00
+// MILP slack bound error (Total, Max)            0,00000e+00  0,00000e+00
+// 
 
-<<< done
+y = [[0
+             1 0 0 0 0 0 0 0 0]
+             [0 0 0 1 0 0 0 0 0 0]
+             [1 0 0 0 0 0 0 0 0 0]
+             [0 0 0 0 1 0 0 0 0 0]
+             [0 0 0 0 0 1 0 0 0 0]
+             [0 0 0 0 0 0 0 1 0 0]
+             [0 0 1 0 0 0 0 0 0 0]
+             [0 0 0 0 0 0 0 0 0 1]
+             [0 0 0 0 0 0 1 0 0 0]
+             [0 0 0 0 0 0 0 0 1 0]];
+x = [[0 4 0 0 0 0 0 0 0 0]
+             [0 0 0 3 0 0 0 0 0 0]
+             [5 0 0 0 0 0 0 0 0 0]
+             [0 0 0 0 2 0 0 0 0 0]
+             [0 0 0 0 0 1 0 0 0 0]
+             [0 0 0 0 0 0 0 10 0 0]
+             [0 0 6 0 0 0 0 0 0 0]
+             [0 0 0 0 0 0 0 0 0 9]
+             [0 0 0 0 0 0 7 0 0 0]
+             [0 0 0 0 0 0 0 0 8 0]];
+
+<<< done, at 0,2s, took 0,000404835s
 

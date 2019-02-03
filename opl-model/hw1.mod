@@ -4,23 +4,28 @@
  * Creation Date: Nov 23, 2018 at 3:46:40 PM
  *********************************************/
 
+ // Params
  int totalHoles = ...;
  setof(int) I = asSet(1..totalHoles); // row index
  float C[I][I] = ...;
  int zeroHoleID = ...;
  float timeLimit = 9999; // no time limit by default
  
+ // Decision variables
  dvar int+ x[I][I];
  dvar boolean y[I][I];
  
-float temp;
-execute{
-var before = new Date();
-temp = before.getTime();
-// set time limit
-cplex.tilim=timeLimit;
-}
+ // Measure optimization time and iteratively set time limit param
+ // which will be passed from from command line
+ float temp;
+ execute{
+  var before = new Date();
+  temp = before.getTime();
+  // set time limit
+  cplex.tilim=timeLimit;
+ }
  
+ // Model
  minimize sum(i in I, j in I) C[i][j]*y[i][j];
  
  subject to{
@@ -43,15 +48,18 @@ cplex.tilim=timeLimit;
  
  }
  
- execute{
- var after = new Date();
- writeln(after);
- writeln("solving time ~= ",after.getTime()-temp); 
+ // Execute after optimization is completed
+ execute{ 
+  // Output solving time
+  var after = new Date();
+  writeln(after);
+  writeln("solving time ~= ",after.getTime()-temp); 
  
- writeln('Done');
- writeln(x);
- var f=new IloOplOutputFile("export.txt");
- f.writeln(x);
- f.close();
+  // Export results in txt file
+  writeln('Done');
+  writeln(x);
+  var f=new IloOplOutputFile("export.txt");
+  f.writeln(x);
+  f.close();
  }
  
