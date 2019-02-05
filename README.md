@@ -1,5 +1,5 @@
 
-# Travelling salesman problem (TSP) implementation: IMB OPL vs Genetic Algorithm
+# Travelling salesman problem (TSP) implementation: IBM OPL vs Genetic Algorithm
 [![License][licence-badge]](/LICENSE)
 
 Research project to explore exact and metaheuristic approaches to solve the TSP. Project developed using IMB OPL and Python.
